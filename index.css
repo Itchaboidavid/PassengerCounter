@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/claudio-schwarz-294j9hG1N3w-unsplash\ \(1\).jpg);
+    background-size: cover;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    background-color: darkgoldenrod;
+    opacity: 0.9;
+    padding: 1em 2em;
+}
+
+.title {
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    color: darkgoldenrod;
+    transition: transform 250ms ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: darkgoldenrod;
+    color: white;
+    transform: scale(1.1);
+}
+
+.number {
+    font-size: 3em;
+    font-size: bold;
+}
+
+.entries {
+    position: absolute;
+    left: 1em;
+    bottom: .5em;
+    font-size: 1.1em;
+    font-size: bold;
+}
